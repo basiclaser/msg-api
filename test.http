@@ -1,0 +1,17 @@
+// POST message
+POST http://localhost:8080/messages
+Content-Type: application/json
+
+{
+    "groupID": "1",
+    "authorID": "1",
+    "body": "Hello World"
+}
+
+// GET messages for group 1 
+GET http://localhost:8080/messages?groupID=1
+
+
+// GET messages 
+GET http://localhost:8080/messages
+
